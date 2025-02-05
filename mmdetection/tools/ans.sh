@@ -1,0 +1,2 @@
+PYTHONPATH="$(dirname $0)/..":$PYTHONPATH \
+python tools/analysis_tools/my_confusion_matrix.py configs/rtmdet/rtmdet_l_swin_b_p6_4xb16-100e_tb_v6_finetune.py  work_dirs/rtmdet_l_swin_b_p6_4xb16_8000i_tb_v5_semi_mixpl_p_20_finetune/test_result_i6400.pkl work_dirs/rtmdet_l_swin_b_p6_4xb16_8000i_tb_v5_semi_mixpl_p_20_finetune --score-thr 0.83 --tp-iou-thr 0.3 --nms-iou-thr 0.5
